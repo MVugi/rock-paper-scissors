@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rock Paper Scissors</title>
-         
-    </head>
-    <body>
-        <script src="./script.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" width="device-width initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">Rock Paper Scissors</div>
+    </div>
+
+    <div class="main">
+      <div class="game-box">
+        <div class="game-box-left">
+          <div class="gbl-text">
+            <div class="gbl-text-main">Make a choice!</div>
+            <div class="gbl-text-sub">
+              Epic Gamer Showdown
+              <p>Win 5 rounds to beat the game!</p>
+            </div>
+          </div>
+          <div class="gbl-buttons">
+            <button class="gbl-button" id="rock">Rock</button>
+            <button class="gbl-button" id="paper">Paper</button>
+            <button class="gbl-button" id="scissors">Scissors</button>
+          </div>
+        </div>
+        <div class="game-box-right">
+          <div class="gbr-image-box">
+            <div class="image-container" id="player-image-container">
+              <img src="./images/you.png" alt="playerSelectionImage" id="player-image" />
+            </div>
+            <div class="image-container" id="computer-image-container">
+              <img src="./images/computer.png" alt="computerSelectionImage" id="computer-image" />
+            </div>
+          </div>
+          <div class="gbr-info-box">
+            <div class="gbr-inner-info-box">
+              <div class="result-box"></div>
+              <div class="winlose-box">
+                <div class="win-box">
+                  WON:
+                  <p></p>
+                </div>
+                <div class="lose-box">
+                  LOST:
+                  <p></p>
+                </div>
+              </div>
+              <div class="counter-box">Games played:</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="result-container">
+      Round results
+      <div class="result-list-container">
+        <ul id="history">
+          
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
